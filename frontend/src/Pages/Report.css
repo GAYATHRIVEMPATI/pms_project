@@ -1,0 +1,95 @@
+.recurring-wrapper {
+    margin: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+  
+  .filter-bar input,
+  .filter-bar select {
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filter-bar input:focus,
+  .filter-bar select:focus {
+    border-color: #007BFF;
+  }
+  
+  .filter-bar button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .product-table th {
+    background-color: #f0f4f8;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .product-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .product-table td {
+    color: #555;
+  }
+  
+  .product-table td:last-child {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .no-reports {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+    font-style: italic;
+  }
+  

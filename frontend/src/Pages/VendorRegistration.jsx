@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./VendorRegistration.css";
 
 const VendorRegistration = () => {
   const [formData, setFormData] = useState({
@@ -113,6 +112,76 @@ const VendorRegistration = () => {
           <button type="reset" className="reset-btn">Reset</button>
         </div>
       </form>
+      <style>{`
+      .vendor-registration {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      
+      .title {
+        background: red;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 22px;
+        border-radius: 5px;
+      }
+      
+      .registration-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      .form-group input,
+      .form-group select {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .terms {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      
+      .submit-btn {
+        background: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .reset-btn {
+        background: #ccc;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      `}</style>
     </div>
   );
 };
