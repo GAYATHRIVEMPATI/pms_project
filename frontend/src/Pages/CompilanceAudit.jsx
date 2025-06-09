@@ -18,62 +18,6 @@ const CompilanceAudit = () => {
       <p style={styles.description}>
         Ensures adherence to university policies and regulatory requirements.
       </p>
-
-      {/* Features Section */}
-      <h2 style={styles.sectionTitle}>Features</h2>
-      <ul style={styles.list}>
-        <li><strong>Policy Enforcement:</strong> Validate procurement requests against defined policies.</li>
-        <li><strong>Audit Logs:</strong> Maintain detailed logs of all procurement activities.</li>
-        <li><strong>Regulatory Reporting:</strong> Generate reports required for compliance with governmental or institutional regulations.</li>
-      </ul>
-
-      {/* Functional Requirements */}
-      <h2 style={styles.sectionTitle}>Functional Requirements</h2>
-
-      <h3 style={styles.subTitle}>Policy Enforcement</h3>
-      <ul style={styles.list}>
-        <li>Validate procurement requests based on:
-          <ul>
-            <li>Defined financial limits per department or user role.</li>
-            <li>Approved vendor lists.</li>
-            <li>Allowable item categories.</li>
-            <li>Specific university guidelines (e.g., environmental or sustainability requirements).</li>
-          </ul>
-        </li>
-        <li>Display clear error messages when requests violate policies.</li>
-        <li>Maintain a record of policy violations for audit purposes.</li>
-      </ul>
-
-      <h3 style={styles.subTitle}>Audit Logs</h3>
-      <ul style={styles.list}>
-        <li>Track all procurement-related activities:
-          <ul>
-            <li>User actions (e.g., request submission, approval, rejection).</li>
-            <li>Vendor interactions (e.g., quotation submission, PO acceptance).</li>
-            <li>System-generated events (e.g., notifications, threshold breaches).</li>
-          </ul>
-        </li>
-        <li>Include details for each log entry:
-          <ul>
-            <li>User ID, timestamp, action type, and affected data.</li>
-            <li>IP address and device information (if available).</li>
-          </ul>
-        </li>
-        <li>Allow filtering and searching through logs by date, user, or action type.</li>
-      </ul>
-
-      <h3 style={styles.subTitle}>Regulatory Reporting</h3>
-      <ul style={styles.list}>
-        <li>Generate compliance reports:
-          <ul>
-            <li>Financial reporting for procurement activities exceeding a specific value.</li>
-            <li>Vendor diversity reporting (e.g., percentage of contracts with small businesses).</li>
-            <li>Environmental impact of procurement (e.g., recycled materials percentage).</li>
-          </ul>
-        </li>
-        <li>Support predefined and custom report formats.</li>
-        <li>Automate scheduled reporting for regulatory deadlines.</li>
-      </ul>
     </div>
   );
 };
@@ -82,6 +26,8 @@ const CompilanceAudit = () => {
 const styles = {
   container: {
     maxWidth: "1000px",
+    width:"700px",
+    height: "200px",
     margin: "auto",
     padding: "30px",
     backgroundColor: "#fffbe6",

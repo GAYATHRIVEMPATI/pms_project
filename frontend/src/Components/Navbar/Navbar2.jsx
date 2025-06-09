@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FaTachometerAlt, FaClipboardList, FaChartBar, FaUsers, FaEnvelope, FaCog, FaUserShield } from "react-icons/fa"; 
+import { FaTachometerAlt, FaClipboardList, FaChartBar, FaUsers, FaEnvelope, FaCog, FaUserShield } from "react-icons/fa";
 
 const Navbar2 = () => {
     const navigate = useNavigate(); // Initialize navigate function
@@ -13,6 +13,9 @@ const Navbar2 = () => {
                 </li>
                 <li onClick={() => navigate("/admin/requests")}>
                     <FaClipboardList className="icon" /> Requests
+                </li>
+                <li onClick={() => navigate("/admin/procurement")}>
+                    <FaClipboardList className="icon" /> Procurement
                 </li>
                 <li onClick={() => navigate("/admin/budget")}>
                     <FaChartBar className="icon" /> Budgets

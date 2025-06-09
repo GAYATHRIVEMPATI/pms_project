@@ -25,6 +25,7 @@ app.use('/api/analytics-reports', require('./routes/analyticsreportRoutes'));
 app.use('/api/auditreports', require('./routes/auditreportRoutes'));
 app.use('/api/audit-logs', require('./routes/auditRoutes'));
 app.use('/api/procurements', require('./routes/procurementRoutes'));
+app.use('/api/procurement-requests', require('./routes/procurementRequests'));
 app.use('/api/notification-procurements', require('./routes/notificationProcurementRoutes'));
 app.use('/api/alerts', require('./routes/alertRoutes'));
 app.use('/api/chats', require('./routes/chatRoutes'));

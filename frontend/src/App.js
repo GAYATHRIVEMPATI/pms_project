@@ -30,6 +30,11 @@ import Trends from "./Pages/Trends";
 import Reports from "./Pages/Reports";
 import SubReports from "./Pages/SubReports";
 
+// Procurement Module
+import ProcurementDashboard from "./Pages/ProcurementModule/ProcurementDashboard";
+import ProcurementRequests from "./Pages/ProcurementModule/ProcurementRequests";
+import NewRequest from "./Pages/ProcurementModule/NewRequest";
+
 import CompilanceAudit from './Pages/CompilanceAudit';
 import Audit from './Pages/Audit';
 import AuditPolicies from './Pages/AuditPolicies';
@@ -108,6 +113,11 @@ function App() {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/edit-profile" element={<EditProfile />} />
                 <Route path="/view-activity" element={<ViewActivity />} /> {/* For Profile page */}
+
+                {/* Procurement Module Routes for Regular Users */}
+                <Route path="/procurement" element={<ProcurementDashboard />} />
+                <Route path="/procurement/requests" element={<ProcurementRequests />} />
+                <Route path="/procurement/new-request" element={<NewRequest />} />
                 {userRole === "Admin" && (
                   <>
                     <Route path="/admin/users" element={<Users />} />
@@ -115,7 +125,7 @@ function App() {
                     <Route path="/user-activity/:userId" element={<UserActivity />} />
                     <Route path="/add-user" element={<AddUser />} />
 
-                    
+
                     {/* Budgets Module (Admin Only) */}
                     <Route path="/admin/budget" element={<Budget />} />
                     <Route path="/admin/budget/recurring" element={<Recurring />} />
@@ -126,12 +136,17 @@ function App() {
                     <Route path="/admin/budget/non-update-budget" element={<NonUpdateBudget />} />
                     <Route path="/admin/budget/view-reports" element={<ViewReports />} />
                     <Route path="/admin/budget/expenditure" element={<Expenditure />} />
-                    
+
                     {/* Reports Page */}
                     <Route path="/admin/reports" element={<Reports />} />
-                    <Route path="/admin/reports/sub-reports" element={<SubReports />} />                    <Route path="/admin/reports/sub-reports" element={<SubReports />} />
+                    <Route path="/admin/reports/sub-reports" element={<SubReports />} />
                     <Route path="/admin/reports/trends" element={<Trends />} />
                     <Route path="/admin/reports/procurement" element={<Procurement />} />
+
+                    {/* Procurement Module Routes */}
+                    <Route path="/admin/procurement" element={<ProcurementDashboard />} />
+                    <Route path="/admin/procurement/requests" element={<ProcurementRequests />} />
+                    <Route path="/admin/procurement/new-request" element={<NewRequest />} />
 
                     {/* Compilance Audit */}
                     <Route path="/admin/compilance-audit" element={<CompilanceAudit />} />
